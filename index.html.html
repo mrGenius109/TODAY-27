@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DFSDRG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary-color: #3b82f6;
+            --secondary-color: #1e40af;
+            --accent-color: #f59e0b;
+            --light-color: #f8fafc;
+            --dark-color: #1e293b;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .navbar {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1522071820081-009f0129c71c');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .work-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .work-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .map-container {
+            height: 300px;
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .contact-info i {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="logo-container">
+                <div class="logo-circle">
+                    SJ
+                </div>
+                <h1 class="text-2xl font-bold">SUNIL JAIN & ASSOCIATES</h1>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-gray-300 transition">About</a>
+                <a href="#work" class="hover:text-gray-300 transition">Our Work</a>
+                <a href="#contact" class="hover:text-gray-300 transition">Contact</a>
+            </div>
+            <button class="md:hidden text-xl" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-blue-800 px-4 py-2" id="mobile-menu">
+            <a href="#about" class="block py-2 hover:bg-blue-700 px-2 rounded">About</a>
+            <a href="#work" class="block py-2 hover:bg-blue-700 px-2 rounded">Our Work</a>
+            <a href="#contact" class="block py-2 hover:bg-blue-700 px-2 rounded">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-white py-20 md:py-32 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">DELTA FINANCE SERVICES</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">INDIRA MARKET DURG</p>
+            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105">
+                Get Started
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">About Our Office</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Work</h3>
+                    <p class="text-gray-600 mb-4">
+                       Income Tax Return (ITR)
+                    </p>
+          
+                    <p class="text-gray-600 mb-6">
+                      Tax Deduction Source (TDS) 
+                    </p>
+                    
+                   <p class="text-gray-600 mb-6"> Goods and Services Tax (GST)
+                   </p>
+                   <p class="text-gray-600 mb-6">
+  
+
+Societies, Trusts, N.G.O. Registration
+</p>
+<p class="text-gray-600 mb-6">
+Partnership Firms, Private, Public Company Registration
+</p>
+<p class="text-gray-600 mb-6">
+Accounts (Experienced Accountent) Income Tax Returns
+</p>
+<p class="text-gray-600 mb-6">
+Material Base with Preparation of GST Returns & Audit
+                     </p>
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Loan</h3>
+                    <p class="text-gray-600 mb-6"> 
+                    अधिकृत प्रतिनिधि स्टेट बैंक एवं अन्य सरकारी बैंक के हाउसिंग लोन के लिए संपर्क करें। किसी भी प्रकार का शुल्क नहीं लिया जाएगा ।
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                      बैंक प्रोजेक्ट एवं फाइनेंस।
+ </p>
+ <p class="text-gray-600 mb-6">
+बिजनेस लोन, लिमिट, टर्म लोन।
+ </p>
+                    
+                    <div class="flex flex-wrap gap-4">
+    
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Reliable</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">Experienced</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Creative</span>
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Our Team" class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <
+                
+                <!-- Project 3 -->
+             
+            
+
+    <!-- Office Detail Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Office Detail </h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-gray-800">Contact Information</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="contact-info flex items-start">
+                            <i class="fas fa-map-marker-alt text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Office Branch Address</h4>
+                                <p class="text-gray-600">Oppsite Press Complex Deshpanday Building, Indira Market Durg (C.G.) 491001 </p>
+                                <p class="text-gray-600">D-3 Bajrang Market, RDA Builing, GE Road Raipur(C.G.) 492001</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info flex items-start">
+                            <i class="fas fa-phone-alt text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Phone</h4>
+                                <p class="text-gray-600">+91 9827183358<br>+91 9300183358<br>+91 9993983358</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info flex items-start">
+                            <i class="fas fa-envelope text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Email</h4>
+                                <p class="text-gray-600">sjaindfs@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info flex items-start">
+                            <i class="fas fa-clock text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Working Hours</h4>
+                                <p class="text-gray-600">Monday - Saturday: 10:00 AM -07 :00 PM<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-gray-801">Visit Us</h3>
+                    <div class="map-container">
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d930.0122903932256!2d81.27810967052157!3d21.190205926375473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a293d272b00dcd5%3A0x4e0d1a89c79bad3d!2sSunil%20Jain%20%26%20Associates!5e0!3m2!1sen!2sin!4v1750878476520!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    
+                    <div class="mt-8 bg-gray-50 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold mb-4 text-gray-800">Schedule a Meeting</h4>
+                        <form>
+                            <div class="mb-4">
+                                <input type="text" placeholder="Your Name" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <input type="email" placeholder="Your Email" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <textarea placeholder="Your Message" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full transition duration-300 w-full">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="logo-container mb-4">
+                        <div class="logo-circle">
+                            SJ
+                        </div>
+                        <h3 class="text-xl font-bold">DFSDURG</h3>
+                    </div>
+                    <p class="text-gray-400">
+                        Best firm. All the staff are so helpful...
+                    </p>
+                </div>
+                
+               
